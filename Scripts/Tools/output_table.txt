@@ -1,0 +1,19 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table*}[h] \resizebox{\linewidth}{!}{
+\begin{tabular}{|c|c|cc|}
+\hline
+\multirow{2}{*}{\textbf{Project Name}} & \multirow{2}{*}{\textbf{Approach}} & \multicolumn{2}{c|}{\textbf{Metrics}} \\ \cline{3-4}
+ &  & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}ELOC \\ Coverage\\ (\%)\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}Method \\ Coverage\\ (\%)\end{tabular}} \\ \hline
+\multirow{4}{*}{\textbf{VR-Basics}} & VRGuide & \multicolumn{1}{c|}{41.38} & 53.22 \\ \cline{2-4}
+ & VRExplorer & \multicolumn{1}{c|}{80.17} & 91.93 \\ \cline{2-4}
+ & VRExplorer (remove Triggerable) & \multicolumn{1}{c|}{68.10 (-15.0\%)} & 77.42 (-15.9\%) \\ \cline{2-4}
+ & VRExplorer (remove Transformable) & \multicolumn{1}{c|}{59.24 (-26.1\%)} & 70.00 (-16.2\%) \\ \hline
+\multirow{4}{*}{\textbf{VR-Room}} & VRGuide & \multicolumn{1}{c|}{40.97} & 50.63 \\ \cline{2-4}
+ & VRExplorer & \multicolumn{1}{c|}{77.61} & 83.54 \\ \cline{2-4}
+ & VRExplorer (remove Grabbable) & \multicolumn{1}{c|}{58.52 (-24.6\%)} & 69.62 (-16.4\%) \\ \cline{2-4}
+ & VRExplorer (remove Triggerable) & \multicolumn{1}{c|}{64.12 (-17.3\%)} & 67.00 (-19.7\%) \\ \hline
+\end{tabular}
+}\caption{RQ3}
+\label{tab:RQ3}
+\end{table*}
